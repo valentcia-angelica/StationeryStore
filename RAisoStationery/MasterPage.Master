@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="RAisoStationery.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class ="nav">
+             
+             <asp:Button class="navBtn" ID="HomePage" runat="server" Text="RAiso" OnClick="HomePage_Click"/>
+            <asp:Button class="navBtn" ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" Visible="false"/>
+            <asp:Button class="navBtn" ID="BtnRegister" runat="server" Text="Register" OnClick="BtnRegister_Click" Visible="false"/>
+
+             <asp:Button class="navBtn" ID="BtnLogout" runat="server" Text="Log Out" OnClick="BtnLogout_Click" Visible="false"/>
+
+             <asp:Button class="navBtn" ID="BtnCart" runat="server" Text="Cart" OnClick="BtnCart_Click" Visible="false"/>
+             <asp:Button class="navBtn" ID="BtnTransactionHistory" runat="server" Text="Transaction History" OnClick="BtnTransactionHistory_Click" Visible="false"/>
+             <asp:Button class="navBtn" ID="BtnTransactionReport" runat="server" Text="Transaction Report" OnClick="BtnTransactionReport_Click" Visible="false"/>
+             <asp:Button class="navBtn" ID="BtnUpdProfileCustomer" runat="server" Text="Update Profile" OnClick="BtnUpdProfileCustomer_Click" Visible="false"/>
+             <asp:Button class="navBtn" ID="BtnUpdProfileAdmin" runat="server" Text="Update Profile" OnClick="BtnUpdProfileAdmin_Click" Visible="false"/>
+             
+        </div>
+        <div>
+            <br />
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <br />
+             <br />
+
+        </div>
+         <div class ="footer">
+            Copyright &copy; RAiso
+        </div>
+    </form>
+</body>
+</html>
